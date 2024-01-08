@@ -24,7 +24,7 @@ dag = DAG(
     'Test_Batch_v003',
     default_args=default_args,
     description='Test batch from batch service',
-    schedule_interval = '@daily'
+    schedule_interval = '0 3 * * *'
 )
 
 email_fun=EmailOperator(
